@@ -168,6 +168,10 @@ margin-left: 100px;:
   font-weight: bold;
 
 }
+.navbar-toggler-icon{
+size: 150px;
+
+}
 .content a{
 
 color: rgba(0,0,0,0.8);}
