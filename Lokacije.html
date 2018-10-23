@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lokacije</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css1.css">
+	<style type="text/css">
+
+body{
+
+background-image: url(img/minimal.jpg);
+background-attachment: fixed;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+
+
+
+}
+
+.collapsible.active:after {
+    content: "\2796"; 
+
+}
+
+	</style>
+</head>
+<body>
+  <header id="main"> 
+  <h1>Best Home <img src="img/key.png" class="image"></h1> 
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link " href="index.html">Početna </a>
+      <a class="nav-item nav-link active" href="Lokacije.html">Lokacije<span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="Kontakt.html">Kontakt</a>
+      
+    </div>
+  </div>
+</nav>
+
+</header>
+<div class="collaps"><button class="collapsible"><img src="img/app3.jpg" width="200px" height="200px"> <span class="spans">Mirijevo</span></button>
+<div class="content">
+<a href="">Trosoban stan 50m2</a><br>
+<a href="">Dvosoban stan 50m2</a><br>
+<a href="">Jednoiposoban stan 50m2</a><br>
+<a href=""> Garsonjera 50m2</a>
+</div>
+</div>
+<div class="collaps"><button class="collapsible"><img src="img/app1.jpg" width="200px" height="200px"><span class="spans">Lekino Brdo</span></button>
+<div class="content">
+  <a href="">Trosoban stan 50m2</a><br>
+<a href="">Dvosoban stan 50m2</a><br>
+<a href="">Jednoiposoban stan 50m2</a><br>
+<a href=""> Garsonjera 50m2</a>
+</div>
+</div>
+<div class="collaps"><button class="collapsible"><img src="img/app2.jpg" width="200px" height="200px"><span class="spans">Medak</span></button>
+<div class="content">
+  <a href="">Trosoban stan 50m2</a><br>
+<a href="">Dvosoban stan 50m2</a><br>
+<a href="">Jednoiposoban stan 50m2</a><br>
+<a href=""> Garsonjera 50m2</a>
+</div>
+</div>
+<div class="collaps"><button class="collapsible"><img src="img/app1.jpg" width="200px" height="200px"><span class="spans">Vidikovac</span></button>
+<div class="content">
+  <a href="">Trosoban stan 50m2</a><br>
+<a href="">Dvosoban stan 50m2</a><br>
+<a href="">Jednoiposoban stan 50m2</a><br>
+<a href=""> Garsonjera 50m2</a>
+</div>
+</div>
+
+<script type="text/javascript">var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}</script>
+
+</body>
+</html>
