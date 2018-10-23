@@ -168,10 +168,13 @@ margin-left: 100px;:
   font-weight: bold;
 
 }
-.navbar-toggler-icon{
-size: 150px;
+@media only screen and (min-width: 600px) {
 
+.jumbotron{
+  font-size: 20px;
 }
+
+} 
 .content a{
 
 color: rgba(0,0,0,0.8);}
