@@ -1,14 +1,14 @@
 
 @font-face {
     font-family: myFirstFont;
-    src: url(Roboto-Regular.ttf);
+    src: url(Lato-Regular.ttf);
 }
 body{
 	font-family: myFirstFont;
 	background-color: rgba(163, 163, 163,0.1);
 	font-color: rgb(60, 60, 61)!important;
 	background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
-  background-size: cover;
+	  background-size: cover;
   background-attachment: fixed;
 	
 }
@@ -21,13 +21,21 @@ html,body
     padding: 0px;
     overflow-x: hidden; 
 }
-
 .card{
 
 position: relative;
 top: 50%;
 display: inline;
 
+}
+
+@media only screen and (min-width: 600px) {
+   .collaps{
+display: flex;
+justify-content: center;
+
+
+   }
 }
 .navbar{
 
@@ -47,12 +55,15 @@ font-size: 25px;
 
 
 }
+.contacts{
+display: flex;
+justify-content: center;
+
+}
 .contact{
 margin-top: 150px;
-display: inline-block;
-width: 40%;
 border-style: inset;
-margin-left: 100px;
+width: 35%;
 
 }
 
@@ -72,20 +83,29 @@ text-align: center;
 	
 }
 #main{
+
 }
+
+
 .jumbotron{
-	height: 500px;
-  width: 100%;
-	margin-top: 120px;
+	height: 400px;
+margin-top: 120px;
 background-image: url(img/city1.jpg);
 background-attachment: fixed;
+background-repeat: no-repeat;
 background-size: cover;
-margin-bottom: 120px;
+margin-bottom: 80px;
 }
 header{
 
 margin-top: 15px;
 margin-left: 15px;
+
+
+}
+
+header h1{
+font-size: 30px;
 
 }
 footer {
@@ -126,10 +146,9 @@ margin-top: 15px;
 .collapsible {
 
 background-color: rgba(255,255,255,0.2);
-     color: rgba(0,0,0,0.8);
+  color: rgba(0,0,0,0.8);
   cursor: pointer;
   padding: 18px;
-  width: 60%;
   border: none;
   text-align: left;
   outline: none;
@@ -138,11 +157,8 @@ background-color: rgba(255,255,255,0.2);
   
 }
 .collaps{
-
+margin-left: 80px;
 margin-top: 100px;
-
-position: relative;
-margin-left: 100px;: 
 
 }
 .active, .collapsible:hover {
@@ -156,7 +172,7 @@ margin-left: 100px;:
 
 }
 .content {
-	width: 60%;
+	
   padding: 0 18px;
   display: none;
   overflow: hidden;
@@ -168,13 +184,6 @@ margin-left: 100px;:
   font-weight: bold;
 
 }
-@media only screen and (min-width: 600px) {
-
-h1{
-  font-size: 50px;
-}
-
-} 
 .content a{
 
 color: rgba(0,0,0,0.8);}
@@ -186,3 +195,49 @@ color: rgba(0,0,0,0.8);}
     margin-left: 5px;
 }
 
+@media only screen and (max-width: 600px) {
+    .collaps{margin-left: 0px!important;}
+
+    h1 {
+        font-size: 30px !important;
+    }
+    p{
+font-size: 17px !important;
+
+    }
+
+    .collapsible{
+		
+    	 width: 100%;
+    }
+    .collapsible img{
+		
+    	 width: 60%;
+    	 height: 60%;
+
+    }.collapsible span{
+		
+    	 font-size: 20px;
+    }
+
+    header h1{
+font-size: 23px!important;
+
+}
+header img{
+
+	width: 50px!important;
+}
+
+.content a{
+	font-size: 14px;
+}
+.contact{
+
+	display: block;
+	width: 100%;
+}
+.contacts{
+	display: block;
+}
+}
