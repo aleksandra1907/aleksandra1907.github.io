@@ -29,14 +29,7 @@ display: inline;
 
 }
 
-@media only screen and (min-width: 600px) {
-   .collaps{
-display: flex;
-justify-content: center;
 
-
-   }
-}
 .navbar{
 
 display: inline;
@@ -58,6 +51,7 @@ font-size: 25px;
 .contacts{
 display: flex;
 justify-content: center;
+margin-bottom: 150px;: 
 
 }
 .contact{
@@ -108,27 +102,30 @@ header h1{
 font-size: 30px;
 
 }
+
 footer {
 	padding-top: 10px;
+	padding-bottom: 10px;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: white;
+
     color: black;
     text-align: center;
-    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
- 
+
 
 }
+footer img{
 
-h3{
-	text-align: center;
-	font-size: 25px;
+	width: 65px;
 }
+
+
 .social{
 
 	text-align: center;
+
 }
 
 h2{
@@ -159,6 +156,7 @@ background-color: rgba(255,255,255,0.2);
 .collaps{
 margin-left: 80px;
 margin-top: 100px;
+margin-bottom: 100px;
 
 }
 .active, .collapsible:hover {
@@ -228,6 +226,12 @@ header img{
 
 	width: 50px!important;
 }
+footer{
+position: relative;
+ background-color: rgba(255,255,255,0.2);
+
+}
+
 
 .content a{
 	font-size: 14px;
@@ -240,4 +244,22 @@ header img{
 .contacts{
 	display: block;
 }
+}
+@media only screen and (min-width: 600px) {
+   .collaps{
+display: flex;
+justify-content: center;
+
+
+   }
+   footer{
+   	
+   	padding-right: 30px;
+   	padding-bottom: 20px;
+   }
+   footer img{
+float: right;
+
+
+   }
 }
